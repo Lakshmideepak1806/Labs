@@ -13,8 +13,9 @@ void purchase() {
 	System.out.println(input);
 	System.out.println("product has warranty:");
 	int years=sc.nextInt();
-	System.out.print("years");
-	System.out.println(input.getDayOfMonth()+"-"+input.getMonthValue()+"-"+input.getYear()+years);
+	System.out.println("years");
+	 LocalDate warrantyEndDate = input.plusYears(years);
+	System.out.println("The end date of warranty is:-"+warrantyEndDate);
 }
 public static void main(String[] args) {
 	Warranteedate13 wd=new Warranteedate13();
