@@ -1,6 +1,6 @@
 package com;
 
-public class Person6 {
+public class Person678 {
 	String FirstName;
 	String LastName;
 	String PhnNumber;
@@ -10,7 +10,7 @@ public class Person6 {
 	}
 	
 
-public Person6(String firstName, String lastName, String phnNumber) {
+public Person678(String firstName, String lastName, String phnNumber) {
 		super();
 		FirstName = firstName;
 		LastName = lastName;
@@ -47,14 +47,14 @@ void display() {
 	System.out.println("First Name: "+getFirstName());
 	System.out.println("Last Name: "+getLastName());
 
-	System.out.println("Gender: "+Person6.gender.M);
+	System.out.println("Gender: "+Person678.gender.M);
 }
 void PhnNumber() {
 	System.out.println("Phone number:"+getPhnNumber());
 }
 
 public static void main(String[] args) {
-	Person6 p=new Person6("N", "Lakshmi Deepak", "9550140422");
+	Person678 p=new Person678("N", "Lakshmi Deepak", "9550140422");
 	p.display();
 	p.PhnNumber();
 }
