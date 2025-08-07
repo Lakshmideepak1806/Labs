@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class AgeAndName15 {
 	String FullName(String FirstName,String LastName) {
-		System.out.println();
+		
 		return FirstName+" "+LastName;
 	}
 	int Age(String Dobstr) {

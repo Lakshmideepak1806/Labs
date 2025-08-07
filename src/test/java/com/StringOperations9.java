@@ -1,19 +1,20 @@
 package com;
 
-import java.lang.foreign.ValueLayout;
+
 import java.util.Scanner;
 
 public class StringOperations9 {
 	String str="Deepak";
+	
 	void add() {
 		System.out.println("To add string to itself");
 		String str1=str+str;
 		System.out.println("The Added String is "+str1);			
 		}
-		void replace() {
+	void replace() {
 			StringBuilder replaced = new StringBuilder(str);
 			for(int i=0;i<=replaced.length()-1;i++) {
-				if(i%2==1) {
+				if(i%2!=0) {
 					replaced.setCharAt(i, '#');
 					
 				}
@@ -21,7 +22,7 @@ public class StringOperations9 {
 			System.out.println(replaced);
 			
 		}
-		void removeDuplicates() {
+	void removeDuplicates() {
 			 StringBuilder dup= new StringBuilder();
 			for (int i = 0; i < str.length(); i++) {
                 char c = str.charAt(i);
@@ -31,7 +32,7 @@ public class StringOperations9 {
 		}
 			System.out.println(dup);
 		}
-		void uppercase() {
+	void uppercase() {
 			StringBuilder modified = new StringBuilder(str);
 		for (int i = 0; i < modified.length(); i++) {
             if (i % 2 != 0) {
@@ -64,8 +65,8 @@ public static void main(String[] args) {
 	case 4:
 		op.uppercase();
 		break;
-
 	default:
+		System.out.println("invalid number");
 		break;
 	}
 }

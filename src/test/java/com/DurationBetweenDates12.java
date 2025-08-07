@@ -14,11 +14,12 @@ public class DurationBetweenDates12 {
 	LocalDate inputDate1=LocalDate.parse(inputDatestr1);
 	System.out.println("Input date1:"+inputDate);
 	System.out.println("Input date2:"+inputDate1);
-	System.out.println("Days ");
+	
 	System.out.print(inputDate.getDayOfMonth()-inputDate1.getDayOfMonth());
-	System.out.println("Months ");
+	System.out.println("Days ");
 	System.out.print(inputDate.getMonthValue()-inputDate1.getMonthValue());
-	System.out.println("years ");
+	System.out.println("Months ");
 	System.out.print(inputDate.getYear()-inputDate1.getYear());
+	System.out.println("years ");
 }
 }

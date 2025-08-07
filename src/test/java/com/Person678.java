@@ -43,13 +43,13 @@ public void setPhnNumber(String phnNumber) {
 	PhnNumber = phnNumber;
 }
 
-void display() {
+public void display() {
 	System.out.println("First Name: "+getFirstName());
 	System.out.println("Last Name: "+getLastName());
 
 	System.out.println("Gender: "+Person678.gender.M);
 }
-void PhnNumber() {
+public void PhnNumber() {
 	System.out.println("Phone number:"+getPhnNumber());
 }
 
