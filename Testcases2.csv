@@ -1,0 +1,240 @@
+,Test Case ID,Test Scenario,Precondition,Test Condition,Test Case Steps,Test Data,Expected Result,Actual Result Iteration 1,"Status
+Iteration 1",Actual Result Iteration 2,"Status
+ Iteration 2
+(to be updated only if 
+test case failed in Iteration 1)",Comments,Req: Reference
+Q1,TC001,Person age,The Registration page should be available,Verify the person age,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on Register button
+4. Enter the age
+5. Click on Submit button","Browser: Chrome
+url: www.abc.com
+age: 17","It shoud throw the error messge ""Invalid Age""",,,,,,
+,TC002,Person age,The Registration page should be available,Verify the person age,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on Register button
+4. Enter the age
+5. Click on Submit button","Browser: Chrome
+url: www.abc.com
+age: 18",It should proceed further,,,,,,
+,TC003,Person age,The Registration page should be available,Verify the person age,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on Register button
+4. Enter the age
+5. Click on Submit button","Browser: Chrome
+url: www.abc.com
+age: 19",It should proceed further,,,,,,
+,TC004,Person age,The Registration page should be available,Verify the person age,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on Register button
+4. Enter the age
+5. Click on Submit button","Browser: Chrome
+url: www.abc.com
+age: 99",It should proceed further,,,,,,
+,TC005,Person age,The Registration page should be available,Verify the person age,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on Register button
+4. Enter the age
+5. Click on Submit button","Browser: Chrome
+url: www.abc.com
+age: 100",It should proceed further,,,,,,
+,TC006,Person age,The Registration page should be available,Verify the person age,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on Register button
+4. Enter the age
+5. Click on Submit button","Browser: Chrome
+url: www.abc.com
+age: 101","It shoud throw the error messge ""Invalid Age""",,,,,,
+Q2,TC001,Candidate Score,The candidate portal must be available,Verify the candidate mark,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on Candidate
+4. Enter the marks","Browser: Chrome
+url: www.exam.com
+mark: 40","It should show the result ""The candidate failed""",,,,,,
+,TC002,Candidate Score,The candidate portal must be available,Verify the candidate mark,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on Candidate
+4. Enter the marks","Browser: Chrome
+url: www.exam.com
+mark: 70","It should show the result ""The candidate passed""",,,,,,
+,TC003,Candidate Score,The candidate portal must be available,Verify the candidate mark,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on Candidate
+4. Enter the marks","Browser: Chrome
+url: www.exam.com
+mark: 120","It should show throw message ""The maximum mark is 100""",,,,,,
+Q3,TC001,Driver hire,The salary calculation site should be available,Calculating the salary,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on salary calculator
+4. Enter the age
+5. Click on submit","Browser: Chrome
+url: www.driverhire.com
+age: 17","It should throw the message ""The minimum age is 18""",,,,,,
+,TC002,Driver hire,The salary calculation site should be available,Calculating the salary,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on salary calculator
+4. Enter the age
+5. Click on submit","Browser: Chrome
+url: www.driverhire.com
+age: 18",It show the salary as 15000,,,,,,
+,TC003,Driver hire,The salary calculation site should be available,Calculating the salary,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on salary calculator
+4. Enter the age
+5. Click on submit","Browser: Chrome
+url: www.driverhire.com
+age: 19",It show the salary as 15000,,,,,,
+,TC004,Driver hire,The salary calculation site should be available,Calculating the salary,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on salary calculator
+4. Enter the age
+5. Click on submit","Browser: Chrome
+url: www.driverhire.com
+age: 24",It show the salary as 15000,,,,,,
+,TC005,Driver hire,The salary calculation site should be available,Calculating the salary,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on salary calculator
+4. Enter the age
+5. Click on submit","Browser: Chrome
+url: www.driverhire.com
+age: 25",It show the salary as 15000 ,,,,,,
+,TC006,Driver hire,The salary calculation site should be available,Calculating the salary,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on salary calculator
+4. Enter the age
+5. Click on submit","Browser: Chrome
+url: www.driverhire.com
+age: 26","It should throw the message ""No criteria for the age""",,,,,,
+,TC007,Driver hire,The salary calculation site should be available,Calculating the salary,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on salary calculator
+4. Enter the age
+5. Click on submit","Browser: Chrome
+url: www.driverhire.com
+age: 39","It should throw the message ""No criteria for the age""",,,,,,
+,TC008,Driver hire,The salary calculation site should be available,Calculating the salary,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on salary calculator
+4. Enter the age
+5. Click on submit","Browser: Chrome
+url: www.driverhire.com
+age: 40",It show the salary as 15000 +10%,,,,,,
+,TC009,Driver hire,The salary calculation site should be available,Calculating the salary,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on salary calculator
+4. Enter the age
+5. Click on submit","Browser: Chrome
+url: www.driverhire.com
+age: 41",It show the salary as 15000 +10%,,,,,,
+,TC010,Driver hire,The salary calculation site should be available,Calculating the salary,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on salary calculator
+4. Enter the age
+5. Click on submit","Browser: Chrome
+url: www.driverhire.com
+age: 64",It show the salary as 15000 +10%,,,,,,
+,TC011,Driver hire,The salary calculation site should be available,Calculating the salary,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on salary calculator
+4. Enter the age
+5. Click on submit","Browser: Chrome
+url: www.driverhire.com
+age: 65",It show the salary as 15000 +5%,,,,,,
+,TC012,Driver hire,The salary calculation site should be available,Calculating the salary,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on salary calculator
+4. Enter the age
+5. Click on submit","Browser: Chrome
+url: www.driverhire.com
+age: 66",It show the salary as 15000 +5%,,,,,,
+Q4,TC001,Discount Sale,Verification page should be avaliable,Check the discount according to the age,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on price calculator
+4. Enter the age
+5. Click on submit","Browser: Chrome
+url: www.discountcounter.com
+age:6","It show the message  ""eligible""",,,,,,
+,TC002,Discount Sale,Verification page should be avaliable,Check the discount according to the age,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on price calculator
+4. Enter the age
+5. Click on submit","Browser: Chrome
+url: www.discountcounter.com
+age:15","It show the message  ""not eligible""",,,,,,
+,TC003,Discount Sale,Verification page should be avaliable,Check the discount according to the age,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on price calculator
+4. Enter the age
+5. Click on submit","Browser: Chrome
+url: www.discountcounter.com
+age:40","It show the message  ""eligible""",,,,,,
+,TC004,Discount Sale,Verification page should be avaliable,Check the discount according to the age,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on price calculator
+4. Enter the age
+5. Click on submit","Browser: Chrome
+url: www.discountcounter.com
+age:50","It show the message  ""not eligible""",,,,,,
+,TC005,Discount Sale,Verification page should be avaliable,Check the discount according to the age,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on price calculator
+4. Enter the age
+5. Click on submit","Browser: Chrome
+url: www.discountcounter.com
+age:65","It show the message  ""eligible""",,,,,,
+Q5,TC001,Cartridge shopping,Cart page should be avaliable,Check the quantity and discount,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on buy option
+4. Enter the quantity
+5. Click on submit","Browser: Chrome
+url: www.printercart.com
+quantity: 3","It show throw message  ""Minimum quantity is 5""",,,,,,
+,TC002,Cartridge shopping,Cart page should be avaliable,Check the quantity and discount,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on buy option
+4. Enter the quantity
+5. Click on submit","Browser: Chrome
+url: www.printercart.com
+quantity: 10",It shows the order placed,,,,,,
+,TC003,Cartridge shopping,Cart page should be avaliable,Check the quantity and discount,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on buy option
+4. Enter the quantity
+5. Click on submit","Browser: Chrome
+url: www.printercart.com
+quantity: 102",it should avail 20% discount,,,,,,
+Q6,TC001,Employee Salary bonus,Salary page should be available,Check the bonus,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on sbonus option
+4. Enter the experience 
+5. Click on submit","Browser: Chrome
+url: www.employee.com
+year of exp:  -1","it throw message ""Invaid year of experience""",,,,,,
+,TC002,Employee Salary bonus,Salary page should be available,Check the bonus,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on sbonus option
+4. Enter the experience 
+5. Click on submit","Browser: Chrome
+url: www.employee.com
+year of exp:  1.5","it show the message ""No bonus for under 2 years of experience""",,,,,,
+,TC003,Employee Salary bonus,Salary page should be available,Check the bonus,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on sbonus option
+4. Enter the experience 
+5. Click on submit","Browser: Chrome
+url: www.employee.com
+year of exp:  3",It show the available bonus = 10%,,,,,,
+,TC004,Employee Salary bonus,Salary page should be available,Check the bonus,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on sbonus option
+4. Enter the experience 
+5. Click on submit","Browser: Chrome
+url: www.employee.com
+year of exp:  6",It show the available bonus = 25%,,,,,,
+,TC005,Employee Salary bonus,Salary page should be available,Check the bonus,"1. Open The Browser
+2. Navigate to the URL 
+3. Click on sbonus option
+4. Enter the experience 
+5. Click on submit","Browser: Chrome
+url: www.employee.com
+year of exp:  12",It show the available bonus = 35%,,,,,,
