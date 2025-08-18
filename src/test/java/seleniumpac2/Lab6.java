@@ -14,7 +14,11 @@ public static void main(String[] args) throws InterruptedException {
 	WebDriver driver=new ChromeDriver();
 	driver.get("https://tutorialsninja.com/demo/index.php?");
 	//login
-
+	driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/a")).click();
+	driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/ul/li[2]/a")).click();
+	driver.findElement(By.id("input-email")).sendKeys("dd4228305@gmail.com");
+	driver.findElement(By.id("input-password")).sendKeys("Deepu@123");
+	driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[2]/div/form/input")).click();
 	driver.findElement(By.linkText("Components")).click();
 	Thread.sleep(3000);
 	driver.findElement(By.linkText("Monitors (2)")).click();
@@ -75,8 +79,9 @@ driver.findElement(By.xpath("//*[@id=\"cart\"]/ul/li[2]/div/p/a[2]/strong")).cli
 driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/a")).click();
 //Select 'Logout' from dropdown
 
-driver.findElement(By.linkText("Login")).click();
-
+driver.findElement(By.linkText("Logout")).click();
+//Click on 'Continue'
+driver.findElement(By.linkText("Continue")).click();
 	
 
 }

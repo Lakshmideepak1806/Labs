@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -25,7 +26,7 @@ driver.findElement(By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a")).
 if(driver.findElement(By.id("email_create")).isDisplayed()){
 	System.out.println("Email create is displayed");
 	driver.findElement(By.id("email_create")).clear();
-	driver.findElement(By.id("email_create")).sendKeys("deepu@gmail.com");
+	driver.findElement(By.id("email_create")).sendKeys("Deepu2@gmail.com");
 	driver.findElement(By.id("email_create")).sendKeys(Keys.TAB);
 	driver.findElement(By.id("email_create")).sendKeys(Keys.ENTER);
 }
@@ -95,21 +96,25 @@ if (driver.findElement(By.id("passwd")).isDisplayed()) {
 
     String password = "sj7hugb"; 
    
-        driver.findElement(By.id("passwd")).sendKeys(password);
-        
-        driver.findElement(By.id("submitAccount")).click();
-        
-        WebElement err2 = driver.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div/div/ol/li[2]"));
-        System.out.println("Error displayed: " + err2.getText());
+        driver.findElement(By.id("passwd")).sendKeys(password);      
+}
+//Date of birth
 
-        if (err2.getText().equals("passwd is invalid.")) {
-            System.err.println("Error message is verified.Password must be between 5 and 20 characters");
-        } else {
-            System.out.println("Error message is not verified");
-        }
-} 
+WebElement sort=driver.findElement(By.id("days"));
+Select sle=new Select(sort);
+Thread.sleep(3000);
+sle.selectByValue("1");
 
+WebElement sort1=driver.findElement(By.id("months"));
+Select sle1=new Select(sort1);
+Thread.sleep(3000);
+sle1.selectByVisibleText("August ");
+WebElement sort2=driver.findElement(By.id("years"));
+Select sle2=new Select(sort2);
+Thread.sleep(3000);
+sle2.selectByVisibleText("2002  ");
 driver.findElement(By.id("newsletter")).click();
 
+driver.findElement(By.id("submitAccount")).click();
 }
 }
