@@ -43,13 +43,13 @@ public class Lab9_3 {
 	  if(browser.equalsIgnoreCase("chrome")) {
 		  System.out.println("This is test 1");
 		  WebDriverManager.chromedriver().setup();
-		  WebDriver driver=new ChromeDriver();
+		  driver=new ChromeDriver();
 		  driver.get("https://tutorialsninja.com/demo/index.php");
 		  }
 		  else if(browser.equalsIgnoreCase("firefox")) {
 		  System.out.println("This is test 2");
 		  WebDriverManager.firefoxdriver().setup();
-		  WebDriver driver=new FirefoxDriver();
+		  driver=new FirefoxDriver();
 		  driver.get("https://tutorialsninja.com/demo/index.php");
 		  }
   }

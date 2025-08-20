@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenium_testng.Lab9_4">
+      <class name="selenium_adv.TC0017_seleniumPageFactory">
         <methods>
-          <include name="beforeClass"/>
-          <include name="f"/>
-          <include name="beforeMethod"/>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
-          <include name="beforeTest"/>
           <include name="afterMethod"/>
+          <include name="beforeTest"/>
           <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="f" invocation-numbers="0 1"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- selenium_testng.Lab9_4 -->
+      </class> <!-- selenium_adv.TC0017_seleniumPageFactory -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
