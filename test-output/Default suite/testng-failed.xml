@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenium_adv.Lab14_FileHandling">
+      <class name="selenium_adv.LAB15_SeleniumCsvFilee">
         <methods>
-          <include name="beforeSuite"/>
-          <include name="afterTest"/>
+          <include name="afterSuite"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
-          <include name="beforeMethod"/>
-          <include name="beforeClass"/>
-          <include name="afterSuite"/>
-          <include name="f" invocation-numbers="2"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
           <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="f" invocation-numbers="0 1"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- selenium_adv.Lab14_FileHandling -->
+      </class> <!-- selenium_adv.LAB15_SeleniumCsvFilee -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
