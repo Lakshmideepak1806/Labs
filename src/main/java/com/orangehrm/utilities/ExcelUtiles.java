@@ -8,29 +8,28 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelUtiles {
-    
-    public static Object[][] getdata(String excelPath, String sheetName) throws IOException {
-        FileInputStream fs = new FileInputStream(new File(excelPath));
-        XSSFWorkbook workbook = new XSSFWorkbook(fs);
-        XSSFSheet sheet = workbook.getSheet(sheetName);
-
-        int rowCount = sheet.getPhysicalNumberOfRows();
-        int colCount = sheet.getRow(0).getPhysicalNumberOfCells();
-
-        System.out.println("Rows: " + rowCount);
-        System.out.println("Cols: " + colCount);
-
-        Object[][] data = new Object[rowCount][colCount];
-
-        for (int i = 0; i < rowCount; i++) {
-            for (int j = 0; j < colCount; j++) {
-                data[i][j] = sheet.getRow(i).getCell(j).getStringCellValue();
-            }
-        }
-
-        workbook.close();
-        fs.close();
-
-        return data;
-    }
+	
+	static String projectpath=System.getProperty("user.dir")  ;
+	public static Object[][] getData(String excelpath, String sheetname) throws IOException {
+		  String[][] data=new String[3][2];
+			  
+			  File file1=new File(excelpath);
+			  FileInputStream fs=new FileInputStream(file1);
+			  XSSFWorkbook workbook=new XSSFWorkbook(fs);
+			  XSSFSheet worksheet=workbook.getSheet(sheetname);
+			  int rowcount=worksheet.getPhysicalNumberOfRows();
+			  System.out.println("rows:"+rowcount);
+			  
+			  for(int i=0;i<rowcount;i++)
+			  {
+				  data[i][0]=worksheet.getRow(i).getCell(0).getStringCellValue();
+			
+				  data[i][1]=worksheet.getRow(i).getCell(1).getStringCellValue();
+			  }
+			  workbook.close();
+			  fs.close();
+			  return data;
+			  
+		    
+		    }
 }

@@ -4,7 +4,9 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -37,6 +39,13 @@ WebDriver driver;
 		driver.findElement(By.name("username")).sendKeys("Admin");
 				driver.findElement(By.name("password")).sendKeys("admin123");
 	}
+	@When("Enter the invalid username and password")
+	public void enter_the_invalid_username_and_password() {
+	    // Write code here that turns the phrase above into concrete actions
+		driver.findElement(By.name("username")).sendKeys("fgdfgdfg");
+		driver.findElement(By.name("password")).sendKeys("admin123fgdf");
+
+	}
 
 	@When("Click on Login Button")
 	public void click_on_login_button() {
@@ -57,6 +66,42 @@ WebDriver driver;
 			System.out.println("Login unSuucessfull");
 		}
 	}
+	@Then("Login should be unsuccessful")
+	public void login_should_be_unsuccessful() {
+		WebElement error=driver.findElement(By.xpath("//p[text()='Invalid credentials']"));
+		if(error.isDisplayed())
+		{
+			System.out.println("login unsccessfull");
+		}
+				
+		
+	}
+	
+	@Then("verify dashboard")
+	public void verify_dashboard() {
+	    // Write code here that turns the phrase above into concrete actions
+		 String expectedTitle = "OrangeHRM";   // or Dashboard page title
+		    String actualTitle = driver.getTitle();
+		    if (actualTitle.contains(expectedTitle)) {
+		        System.out.println("Dashboard verification successful");
+		    } else 
+		    {
+		    	Assert.fail("Expected title: " + expectedTitle + " but found: " + actualTitle);
+		    	System.out.println("Dashboard verification failed");
+		    }
+		    	
+		        
+	}
+	
+
+	@Then("Close the Browser")
+	public void close_the_browser() {
+	    // Write code here that turns the phrase above into concrete actions
+	    driver.quit();
+	}
+	
+	//
+	
 
 
 }

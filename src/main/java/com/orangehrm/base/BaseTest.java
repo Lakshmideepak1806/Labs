@@ -1,5 +1,7 @@
 package com.orangehrm.base;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -16,6 +18,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseTest {
 
 		protected WebDriver driver;
+		
 		protected ExtentReports extent;
 		protected ExtentTest test;
 		@BeforeSuite
@@ -30,6 +33,7 @@ public class BaseTest {
 			  System.out.println("Before method");
 			  WebDriverManager.chromedriver().setup();
 				driver=new ChromeDriver();
+				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 				driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		  }
 		  @AfterMethod

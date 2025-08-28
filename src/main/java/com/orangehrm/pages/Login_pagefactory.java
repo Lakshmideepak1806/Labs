@@ -1,36 +1,41 @@
 
 package com.orangehrm.pages;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class Login_pagefactory {
-	//By uname=By.name("username");
-		@FindBy(name="username")
-		WebElement uname;
-		//By pword=By.name("password");
-		@FindBy(name="password")
-		WebElement pword;
-		//By loginbutton=By.xpath("//button[@type='submit']");
-		@FindBy(xpath="//button[@type='submit']")
-		WebElement loginbutton;
-		
+    
+    WebDriver driver;
+    
+    // ✅ Constructor
+    public Login_pagefactory(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this); // important!
+    }
 
-		public void enterusername(String username)
-		{
-			uname.sendKeys(username);
-		}
-		
-		
-		public void enterpassword(String password)
-		{
-			pword.sendKeys(password);
-		}
-		
-		
-		public void clickonlogin()
-		{
-			loginbutton.click();
-		}
-		
-	}
+    // Elements
+    @FindBy(name="username")
+    WebElement uname;
+
+    @FindBy(name="password")
+    WebElement pword;
+
+    @FindBy(xpath="//button[@type='submit']")
+    WebElement loginbutton;
+
+    // Actions
+    public void enterusername(String username) {
+        uname.sendKeys(username);
+    }
+
+    public void enterpassword(String password) {
+        pword.sendKeys(password);
+    }
+
+    public void clickonlogin() {
+        loginbutton.click();
+    }
+}

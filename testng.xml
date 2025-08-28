@@ -3,8 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="selenium_testng.Lab3"/>
-      <class name="selenium_testng.Lab4"/>
+      <class name="Jenkinsspac.jenkinsTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
