@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="Jenkinsspac.jenkinsTest"/>
+      <class name="AssessmentPractice.Q9_SeleniumScreenshotts"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

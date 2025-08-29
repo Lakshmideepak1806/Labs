@@ -1,0 +1,64 @@
+Started by user Natakam Lakshmi Deepak
+Running as SYSTEM
+Building in workspace C:\Users\proje\.jenkins\workspace\t3
+[t3] $ cmd /c call C:\Users\proje\AppData\Local\Temp\jenkins8498120360735305816.bat
+
+C:\Users\proje\.jenkins\workspace\t3>cd C:\Users\proje\eclipse-workspace\com 
+
+C:\Users\proje\eclipse-workspace\com>mvn clean test 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< StandardPrograms:com >------------------------
+[INFO] Building com 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ com ---
+[INFO] Deleting C:\Users\proje\eclipse-workspace\com\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ com ---
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ com ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 7 source files with javac [debug target 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ com ---
+[INFO] Copying 4 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ com ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 77 source files with javac [debug target 17] to target\test-classes
+[INFO] /C:/Users/proje/eclipse-workspace/com/src/test/java/com/orangehrm/stepdefinitions/TestRunner.java: C:\Users\proje\eclipse-workspace\com\src\test\java\com\orangehrm\stepdefinitions\TestRunner.java uses or overrides a deprecated API.
+[INFO] /C:/Users/proje/eclipse-workspace/com/src/test/java/com/orangehrm/stepdefinitions/TestRunner.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ com ---
+[INFO] Using auto detected provider org.apache.maven.surefire.testng.TestNGProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Aug 29, 2025 11:37:18 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+1st Product:Lenovo IdeaPad Slim 3, Intel Core i5-12450H 12th Gen, 16GB RAM, 512GB SSD, FHD 250Nits, 14"/35.5cm, Windows 11, MSOffice 21, Grey, 1.37Kg, 83EQ005VIN,1Yr Warranty,Alexa Built-in,3 mon. GamePass Laptop
+2st Product:MSI Modern 15, Intel 12Th Gen I7-1255U, 40Cm FHD Thin & Light Laptop (16GB/1Tb NVME SSD/Windows 11 Home/Iris Xe Graphics/Classic Black/1.7Kg), B12MO-815IN
+3st Product:HP 15, AMD Ryzen 3 7320U (8GB LPDDR5, 512GB SSD) FHD, Anti-Glare, Micro-Edge, 15.6"/39.6cm, Win 11, Office 21, Silver, 1.59kg, fc0154AU, AMD Radeon Graphics, 1080p FHD Camera Laptop
+4st Product:HP 15s, 12th Gen Intel Core i3-1215U (8GB DDR4, 512GB SSD) Anti-Glare, 15.6"/39.6cm,FHD, Win 11, MS Office 21, Silver, 1.69kg, fy5006tu/fd0751tu/fd0752tu, UHD Graphics, HD Camera, Dual Speakers Laptop
+5st Product:HP Pavilion, 13th Gen Intel Core i5-1335U Laptop, (16GB DDR4,1TB SSD) IPS, 15.6''/39.6cm, FHD, Win11,Office21, Fog Blue,1.74Kg, Iris Xe Graphics, Backlit, B&O, eg3017TU
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 44.52 s -- in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:30 min
+[INFO] Finished at: 2025-08-29T11:37:54+05:30
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS

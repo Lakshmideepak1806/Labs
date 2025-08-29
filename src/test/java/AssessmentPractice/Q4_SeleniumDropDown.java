@@ -24,7 +24,7 @@ import org.testng.annotations.AfterSuite;
 
 public class Q4_SeleniumDropDown {
 	WebDriver driver;
-  @Test()
+  @Test
   public void Dropdown() {
 	  WebElement sort=driver.findElement(By.name("my-select"));
 	  Select sle=new Select(sort);

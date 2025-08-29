@@ -22,7 +22,7 @@ public class Q3_Selenium {
 	WebDriver driver;
   @Test(dataProvider = "dp")
   public void Search( String search) {
-	  driver.findElement(By.xpath("/html/body/div/div[1]/div[3]/div/div/form/div/div/span/span/button")).click();
+	 // driver.findElement(By.xpath("/html/body/div/div[1]/div[3]/div/div/form/div/div/span/span/button")).click();
 	  driver.findElement(By.name("field-keywords")).sendKeys(search);
 	  driver.findElement(By.id("nav-search-submit-button")).click();
 	  WebElement product1=driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/div/div/div/span/div/div/div/div[2]/div/div/div[1]/a/h2/span"));

@@ -52,7 +52,7 @@ public class LoginOrangeHrm extends BaseTest {
         }
     }
     
-    @Test(enabled = false)
+    @Test
     public void question1_google() throws IOException
     {
   	  navigateurl("https://www.google.com/");
@@ -65,6 +65,10 @@ public class LoginOrangeHrm extends BaseTest {
   	  else
   	  {
   		 test.fail("google title is not matched");
+  		 String screenpath = ScreenshotUtiles.Capture(driver,"title is not matched");
+         test.fail("Login Unsuccessful. Title not matched: " + actualtitle)
+             .addScreenCaptureFromPath(screenpath);
+  		 
   	  }
     }
     @Test(dataProvider="logindata",enabled  =false)
@@ -80,6 +84,7 @@ public class LoginOrangeHrm extends BaseTest {
    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
    	  if(logintext.getText().equals(" You logged into a secure area! ")) {
    		  System.out.println("Login successfull");
+   		  test.pass("Googile title is matched");
    	  }
    	  else {
    		  System.out.println("Login unsuccessfull");
@@ -124,7 +129,7 @@ public class LoginOrangeHrm extends BaseTest {
 		  .addScreenCaptureFromPath(screenpath);
    		}
     }
-    @Test
+    @Test(enabled = false)
     public void question5_Alertpopup() throws IOException {
     	navigateurl("https://the-internet.herokuapp.com/javascript_alerts");
    	 test=extent.createTest("Verify the option is correct or not");
