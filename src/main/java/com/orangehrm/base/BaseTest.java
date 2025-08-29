@@ -26,7 +26,10 @@ public class BaseTest {
 		{
 			extent=ExtentManager.getinstance();
 		}
-		
+		public void navigateurl(String url)
+		{
+			 driver.get(url);
+		}
 		
 		@BeforeMethod
 		  public void setup() {

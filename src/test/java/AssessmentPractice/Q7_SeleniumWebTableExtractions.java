@@ -35,6 +35,9 @@ public class Q7_SeleniumWebTableExtractions {
                String email = row.findElement(By.xpath("./td[3]")).getText();
                System.out.println("Email of Jason: " + email);
            }
+		   else {
+			   System.out.println("name is not verified");
+		   }
 	 }
 	 
   }

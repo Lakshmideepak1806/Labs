@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Jenkinsspac.jenkinsTest">
+      <class name="com.orangehrm.test.LoginOrangeHrm">
         <methods>
-          <include name="f"/>
+          <include name="flushreport"/>
+          <include name="question4_Dropdown"/>
+          <include name="setupreport"/>
+          <include name="teardown"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- Jenkinsspac.jenkinsTest -->
+      </class> <!-- com.orangehrm.test.LoginOrangeHrm -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
